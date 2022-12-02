@@ -23,7 +23,7 @@ namespace Web_Server_Final_Games.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult PersonalInfo()
         {
             return View();
         }

@@ -18,4 +18,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\Aaron_Image.png" />
+    <None Include="wwwroot\Images\DanaeImage.png" />
+    <None Include="wwwroot\Images\Danae_Image.jpg" />
+  </ItemGroup>
+
 </Project>
