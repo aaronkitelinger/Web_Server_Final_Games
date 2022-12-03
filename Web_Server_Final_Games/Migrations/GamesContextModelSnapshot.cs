@@ -37,6 +37,66 @@ namespace Web_Server_Final_Games.Migrations
                     b.HasKey("gameId");
 
                     b.ToTable("Games");
+
+                    b.HasData(
+                        new
+                        {
+                            gameId = 1,
+                            gameTitle = "Elden Ring",
+                            gameCategory = "Video Game",
+                            gameRating = "M17"
+                        },
+
+                        new
+                        {
+                            gameId = 2,
+                            gameTitle = "Outer Wilds",
+                            gameCategory = "Video Game",
+                            gameRating = "E"
+
+                        },
+
+                        new
+                        {
+                            gameId = 3,
+                            gameTitle = "Just Dance",
+                            gameCategory = "Video Game",
+                            gameRating = "E"
+                        },
+                        new
+                        {
+                            gameId = 4,
+                            gameTitle = "EverDell",
+                            gameCategory = "TTRPG",
+                            gameRating = "E"
+
+                        },
+
+                        new
+                        {
+                            gameId = 5,
+                            gameTitle = "DnD",
+                            gameCategory = "TTRPG",
+                            gameRating = "E"
+                        },
+                        new
+                        {
+                            gameId = 6,
+                            gameTitle = "Cards Against Humanity",
+                            gameCategory = "Card Game",
+                            gameRating = "NSFW"
+                        },
+
+                        new
+                        {
+                            gameId = 7,
+                            gameTitle = "Magic the Gathering",
+                            gameCategory = "Card Game",
+                            gameRating = "E"
+                        }
+
+
+                        );
                 });
 #pragma warning restore 612, 618
         }

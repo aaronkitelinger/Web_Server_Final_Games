@@ -13,9 +13,11 @@ namespace Web_Server_Final_Games.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private Repository<Games> repository { get; set; }
+
+        public HomeController(GamesContext ctx) 
         {
-            _logger = logger;
+            repository = new Repository<Games>(ctx);
         }
 
         public IActionResult Index()
@@ -27,6 +29,24 @@ namespace Web_Server_Final_Games.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Add()
+        {
+
+            return View();
+        }
+
+        public IActionResult OuterWilds()
+        {
+            return View();
+        }
+
+        public IActionResult EldenRing()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
